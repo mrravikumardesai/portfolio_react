@@ -4,6 +4,7 @@ import HeroSectionTwo from './main/modules/hero/HeroSectionTwo'
 import AnimatedCursor from 'react-animated-cursor'
 import AboutMe from './main/modules/about/AboutMe'
 import Projects from './main/modules/projects/Projects'
+import SplashScreen from './main/modules/splash/SplashScreen'
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
       ]}
     />
     {/* <HeroSection /> */}
+    <SplashScreen />
     <HeroSectionTwo />
     <AboutMe />
     <Projects />
