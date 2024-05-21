@@ -5,6 +5,7 @@ import AnimatedCursor from 'react-animated-cursor'
 import AboutMe from './main/modules/about/AboutMe'
 import Projects from './main/modules/projects/Projects'
 import SplashScreen from './main/modules/splash/SplashScreen'
+import Services from './main/modules/Services/Services'
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
      <AnimatedCursor
       innerSize={8}
       outerSize={8}
-      color='18,18,18'
+      color='255, 128, 128'
       // outerAlpha={0.2}
       innerScale={5}
       outerScale={15}
@@ -34,6 +35,7 @@ const App = () => {
     <SplashScreen />
     <HeroSectionTwo />
     <AboutMe />
+    <Services />
     <Projects />
     </>
   )

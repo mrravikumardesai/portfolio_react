@@ -6,14 +6,17 @@ import { motion } from "framer-motion"
 const HeroSectionTwo = () => {
     return (
         <motion.div
-
             initial={{ opacity: 1, x: 10 }}
             whileInView={{ opacity: 1, x: 0, }}
             className='relative w-screen h-screen flex items-center justify-center  bg-gradient-to-r from-cyan-500 to-blue-500 text-[#F5F5F5] lg:text-9xl text-5xl'>
             <motion.div
-                initial={{ opacity: 0, y: 230 }}
+                initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0, }}
-                //  viewport={{ once: true, }}
+                // whileHover={{
+                //     textShadow: '1px 1px 1px #558ABB',
+                //     color: 'gray',
+                //     transition: { duration: 2, ease: 'easeIn' },
+                // }}
                 transition={{ ease: "easeOut", duration: .4 }}
                 className='flex flex-col flex-wrap max-w-4xl items-center justify-center gap-2'>
 
@@ -22,7 +25,7 @@ const HeroSectionTwo = () => {
 
             </motion.div>
             <motion.div className='absolute mx-auto bottom-0'
-                initial={{ opacity: 0, y: 10 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
             //  viewport={{ once: true }}
             >
@@ -51,6 +54,7 @@ const HeroSectionTwo = () => {
                     <section>
                         <ul className='flex flex-row gap-8'>
                             <li className='hover:border-b-2 transition-all duration-150 ease-in-out '>About</li>
+                            <li className='hover:border-b-2 transition-all duration-150 ease-in-out '>Services</li>
                             <li className='hover:border-b-2 transition-all duration-150 ease-in-out '>Projects</li>
                             <li className='hover:border-b-2 transition-all duration-150 ease-in-out '>Contact</li>
                         </ul>
