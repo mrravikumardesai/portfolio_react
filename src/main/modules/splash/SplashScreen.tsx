@@ -1,15 +1,9 @@
-import React, { useEffect, useState } from 'react'
 import { motion } from "framer-motion"
 const SplashScreen = () => {
-    const [isVisible, setIsVisible] = useState(true)
-    useEffect(() => {
-        setTimeout(() => {
-            setIsVisible(false)
-        }, 1500);
-    }, [])
+
     return (
         <>
-            {isVisible &&
+      
                 <div className='relative w-screen h-screen flex items-center justify-center  bg-gradient-to-r from-cyan-500 to-blue-500 text-[#F5F5F5] lg:text-9xl text-5xl'>
                     <motion.div
                         initial={{ opacity: 0,  }}
@@ -20,7 +14,7 @@ const SplashScreen = () => {
                     </motion.div>
 
                 </div>
-            }
+            
         </>
     )
 }

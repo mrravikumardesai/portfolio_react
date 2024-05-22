@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaLinkedin, FaXTwitter } from 'react-icons/fa6'
 import { RiGithubLine } from 'react-icons/ri'
 import { motion } from "framer-motion"
@@ -6,9 +5,9 @@ import { motion } from "framer-motion"
 const HeroSectionTwo = () => {
     return (
         <motion.div
-            initial={{ opacity: 1, x: 10 }}
-            whileInView={{ opacity: 1, x: 0, }}
-            className='relative w-screen h-screen flex items-center justify-center  bg-gradient-to-r from-cyan-500 to-blue-500 text-[#F5F5F5] lg:text-9xl text-5xl'>
+            initial={{ opacity: 1, y: -110 }}
+            whileInView={{ opacity: 1, y: 0, }}
+            className='relative w-full h-screen flex items-center justify-center  bg-gradient-to-r from-cyan-500 to-blue-500 text-[#F5F5F5] lg:text-9xl text-5xl'>
             <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0, }}
@@ -44,7 +43,6 @@ const HeroSectionTwo = () => {
             <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 20, }}
-                // viewport={{ once: true, }}
                 transition={{ ease: "easeOut", duration: 1 }}
                 className='absolute top-0 mx-auto my-5 text-xl'>
                 <div className='flex lg:flex-row flex-col justify-around items-center gap-4 w-screen font-mono text-2xl londrina-solid-regular px-2 sm:px-4 md:px-8 '>
