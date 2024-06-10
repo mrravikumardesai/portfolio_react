@@ -5,17 +5,12 @@ import { motion } from "framer-motion"
 const HeroSectionTwo = () => {
     return (
         <motion.div
-            initial={{ opacity: 1, y: -110 }}
+            initial={{ opacity: 1, y: -10 }}
             whileInView={{ opacity: 1, y: 0, }}
-            className='relative w-full h-screen flex items-center justify-center  bg-gradient-to-r from-cyan-500 to-blue-500 text-[#F5F5F5] lg:text-9xl text-5xl'>
+            className='relative w-full h-screen flex items-center justify-center  bg-gradient-to-t from-[#F5F5F5] to-blue-400 text-slate-700 lg:text-9xl text-5xl'>
             <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0, }}
-                // whileHover={{
-                //     textShadow: '1px 1px 1px #558ABB',
-                //     color: 'gray',
-                //     transition: { duration: 2, ease: 'easeIn' },
-                // }}
                 transition={{ ease: "easeOut", duration: .4 }}
                 className='flex flex-col flex-wrap max-w-4xl items-center justify-center gap-2'>
 
@@ -26,16 +21,17 @@ const HeroSectionTwo = () => {
             <motion.div className='absolute mx-auto bottom-0'
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-            //  viewport={{ once: true }}
             >
-                <p className='text-xl my-4 londrina-solid-black border-2 p-2 rounded-2xl tracking-wide hover:tracking-widest shadow-xl hover:rounded-md transition-all duration-150 ease-linear'>Explore more</p>
+                <a 
+                href='#about'
+                className='text-xl my-4 londrina-solid-black border-2 p-2 rounded-2xl tracking-wide hover:tracking-widest hover:rounded-md transition-all duration-150 ease-linear'>Explore more</a>
             </motion.div>
             <motion.div
                 initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0, }}
                 viewport={{ once: true, }}
                 transition={{ ease: 'easeInOut', duration: 2 }}
-                className='absolute lg:left-0 flex flex-col text-4xl max-w-9 justify-between gap-8 mx-4 items-center left-0 sm:block hidden'>
+                className='absolute lg:left-0 flex-col text-4xl max-w-9 justify-between gap-8 mx-4 items-center left-0 sm:block hidden'>
                 <FaLinkedin className="hover:text-slate-500 transition-colors duration-150 ease-linear" />
                 <RiGithubLine className="hover:text-slate-500 transition-colors duration-150 ease-linear" />
                 <FaXTwitter className="hover:text-slate-500 transition-colors duration-150 ease-linear" />
@@ -54,7 +50,7 @@ const HeroSectionTwo = () => {
                             <a className='hover:border-b-2 transition-all duration-150 ease-in-out ' href='#about'>About</a>
                             <a className='hover:border-b-2 transition-all duration-150 ease-in-out ' href='#services' >Services</a>
                             <a className='hover:border-b-2 transition-all duration-150 ease-in-out ' href='#projects'>Projects</a>
-                            <a className='hover:border-b-2 transition-all duration-150 ease-in-out '>Contact</a>
+                            <a className='hover:border-b-2 transition-all duration-150 ease-in-out ' href="#contact">Contact</a>
                         </ul>
                     </section>
                 </div>

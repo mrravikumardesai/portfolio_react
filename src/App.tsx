@@ -6,6 +6,7 @@ import Projects from './main/modules/projects/Projects'
 import SplashScreen from './main/modules/splash/SplashScreen'
 import Services from './main/modules/Services/Services'
 import Expertise from './main/modules/experise/Expertise'
+import ContactMe from './main/modules/contactme/ContactMe'
 
 const App = () => {
   const [isVisible, setIsVisible] = useState(true)
@@ -47,6 +48,7 @@ const App = () => {
           <Expertise />
           <Services />
           <Projects />
+          <ContactMe />
         </>
       }
 
