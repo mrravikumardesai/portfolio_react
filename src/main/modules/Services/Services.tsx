@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 const Services = () => {
     return (
         <motion.div
+            id="services"
             initial={{ opacity: 1, y: 10 }}
             whileInView={{ opacity: 1, y: 0, }}
             className='relative londrina-solid-light w-full h-screen flex flex-col gap-4 items-center justify-center  bg-gradient-to-r from-cyan-500 to-blue-500 text-[#F5F5F5] lg:text-4xl text-xl'>

@@ -1,8 +1,8 @@
 import { motion } from "framer-motion"
 import { TbBrandMysql, TbBrandTypescript } from 'react-icons/tb'
 import { RiJavaLine, RiJavascriptLine, RiNodejsLine } from 'react-icons/ri'
-import { SiAndroidstudio, SiDart, SiFlutter } from 'react-icons/si'
-import { FaReact } from 'react-icons/fa6'
+import { SiAndroidstudio, SiDart, SiFlutter, SiSocketdotio } from 'react-icons/si'
+import { FaAws, FaReact } from 'react-icons/fa6'
 import { BiLogoFirebase } from 'react-icons/bi'
 const Expertise = () => {
 
@@ -17,6 +17,8 @@ const Expertise = () => {
         "java": <RiJavaLine />,
         "mysql": <TbBrandMysql />,
         "firebase": <BiLogoFirebase />,
+        'socket.io':<SiSocketdotio/>,
+        'aws':<FaAws />
 
     }
 
