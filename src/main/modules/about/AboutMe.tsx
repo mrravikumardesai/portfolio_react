@@ -8,7 +8,7 @@ const AboutMe = () => {
     return (
         <div    
             id="about"
-            className='relative bg-[#F5F5F5] text-[#121212] flex items-center justify-center shadow-2xl w-full h-screen' >
+            className='relative bg-[#ffffff] text-[#121212] flex items-center justify-center w-full h-screen' >
             <motion.div
                 
                 className='max-w-5xl grid lg:grid-cols-2 grid-cols-1 gap-2 text-4xl londrina-solid-light m-12'>
