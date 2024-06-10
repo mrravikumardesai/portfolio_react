@@ -51,10 +51,10 @@ const HeroSectionTwo = () => {
                     </section>
                     <section>
                         <ul className='flex flex-row gap-8'>
-                            <li className='hover:border-b-2 transition-all duration-150 ease-in-out '>About</li>
-                            <li className='hover:border-b-2 transition-all duration-150 ease-in-out '>Services</li>
-                            <li className='hover:border-b-2 transition-all duration-150 ease-in-out '>Projects</li>
-                            <li className='hover:border-b-2 transition-all duration-150 ease-in-out '>Contact</li>
+                            <a className='hover:border-b-2 transition-all duration-150 ease-in-out ' href='#about'>About</a>
+                            <a className='hover:border-b-2 transition-all duration-150 ease-in-out ' href='#services' >Services</a>
+                            <a className='hover:border-b-2 transition-all duration-150 ease-in-out ' href='#projects'>Projects</a>
+                            <a className='hover:border-b-2 transition-all duration-150 ease-in-out '>Contact</a>
                         </ul>
                     </section>
                 </div>

@@ -1,8 +1,8 @@
-import {  motion } from "framer-motion"
+import { motion } from "framer-motion"
 import { TbBrandMysql, TbBrandTypescript } from 'react-icons/tb'
 import { RiJavaLine, RiJavascriptLine, RiNodejsLine } from 'react-icons/ri'
-import { SiAndroidstudio, SiDart, SiFlutter } from 'react-icons/si'
-import { FaReact } from 'react-icons/fa6'
+import { SiAndroidstudio, SiDart, SiFlutter, SiRazorpay, SiSocketdotio } from 'react-icons/si'
+import { FaAws, FaReact } from 'react-icons/fa6'
 import { BiLogoFirebase } from 'react-icons/bi'
 import { BsBrowserChrome } from 'react-icons/bs'
 import { CiMobile1 } from 'react-icons/ci'
@@ -22,44 +22,69 @@ const Projects = () => {
     "firebase": <BiLogoFirebase />,
     "website": <BsBrowserChrome />,
     "application": <CiMobile1 />,
+    'socket.io':<SiSocketdotio/>,
+    'aws':<FaAws />,
+    'razorpay':<SiRazorpay/>
   }
 
   const data = [
     {
+      id: 4,
+      title: 'Constructify Networks',
+      // description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, numquam quis. Maiores voluptatibus reprehenderit odio quia enim, omnis quisquam maxime corporis amet!",
+      description: [
+        `Handled the construction based project with Node.js for backend management, React.js forfrontend interface, and Flutter for cross-platformmobile application.`,
+        `Successfully added OTP verification for furthersecurity and integrated Razorpay for safe paymentgateway capabilities.`,
+        `Created a multi-user system that allowsprofessionals to establish profiles in a variety ofcategories and regions, utilizing location servicesto make it easy for users to find and get in touchwith qualified professionals.`,
+        `Established an expedient communication systemthat permits users to make direct phone inquiries,guaranteeing effective connection between usersand experts`
+      ],
+      tags: ["Flutter", "Dart", "ReactJs", "NodeJs", "Typescript", "MySql","Razorpay"],
+      role: ["Application", "Website", "Backend", "APIs"]
+    },
+    {
       id: 1,
       title: 'HCS Portfolio',
-      description: "Create Userfriendly Website for Harry Creative Studio Portfolio",
+      description: [
+        `MySQL was utilized for data management while a React.js frontend and a Node.js/Express.js/Sequelize backend were used to create and manage a dynamic blog post website.`,
+        `Worked with a web designer to incorporate React.js based visually appealing functionalities that improve user experience.`
+      ],
       tags: ["ReactJs", "NodeJs", "Typescript", "Dart", "Flutter"],
       role: ["Website", "Backend"]
     },
     {
       id: 2,
       title: 'ELaundry',
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, numquam quis. Maiores voluptatibus reprehenderit odio quia enim, omnis quisquam maxime corporis amet!",
+      description: [
+        `Developed an industry-leading e-laundry application with the goal of improving andstreamlining users' laundry experiences.`,
+        `It used Android SDK for mobile applications andNode.js and MySQL for the backend.`,
+        `There's no need for in-person visits with the easilynavigable app that provides seamless access tolaundry services.`,
+        `It offers a useful and time-saving solution forpeople with hectic schedules thanks to featureslike simple registration and a variety of serviceoptions.`
+      ],
       tags: ["Android", "Java", "NodeJs", "Javascript", "Firebase"],
       role: ["Application", "Backend"]
     },
     {
       id: 3,
       title: 'Nimble (Human Resource Managment System)',
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, numquam quis. Maiores voluptatibus reprehenderit odio quia enim, omnis quisquam maxime corporis amet!",
-      tags: ["NodeJs", "Typescript", "MySql"],
+      description: [
+        `Create and maintain a solid HRMS backend with MySQL, Express.js, and Node.js for effective datamanagement.`, 
+        `Improved security using bcrypt, jsonwebtoken, andnodemailer technologies.`, 
+        `Used the Document360 APIs for front-end side search and help functionality`, 
+        `Advanced Excel-related features were implemented using exceljs to communicate withdatabases.`, 
+        `Utilized AWS SDK to store and retrieve files fromAWS S3 bucket.`, 
+        `For role-based dynamic chat functionality,socket.io was integrated.`
+      ],
+      tags: ["NodeJs", "Typescript", "MySql","socket.io",'aws'],
       role: ["Backend", "APIs"]
     },
-    {
-      id: 4,
-      title: 'Construction network',
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, numquam quis. Maiores voluptatibus reprehenderit odio quia enim, omnis quisquam maxime corporis amet!",
-      tags: ["Flutter", "Dart", "ReactJs", "NodeJs", "Typescript", "MySql"],
-      role: ["Application", "Website", "Backend", "APIs"]
-    },
+
   ]
 
 
 
   return (
     <>
-      <div className='bg-[#ffffff] text-[#121212] flex flex-col items-center justify-between '>
+      <div id="projects" className='bg-[#ffffff] text-[#121212] flex flex-col items-center justify-between '>
         <motion.div
           initial={{ opacity: 0, y: 110 }}
           whileInView={{ opacity: 1, y: 0, }}
@@ -89,7 +114,13 @@ const Projects = () => {
                         )
                       }
                     </div>
-                    <p className='quicksand-300 text-xl text-wrap'>{item.description}</p>
+                    {/* <p className='quicksand-300 text-xl text-wrap'>{item.description}</p> */}
+                    <ul className="list-disc">
+                      {
+                        item.description.map((desc: string) => <li className='quicksand-300 text-xl text-wrap bullet'>{desc}</li>)
+                      }
+
+                    </ul>
 
                     <div className='flex flex-row gap-2 flex-wrap'>
                       {item.tags && item.tags.length !== 0 &&
