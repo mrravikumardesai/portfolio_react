@@ -1,17 +1,19 @@
 import { motion } from "framer-motion"
-import { TbBrandMysql, TbBrandTypescript } from 'react-icons/tb'
+import { TbBrandMysql, TbBrandRedux, TbBrandTypescript } from 'react-icons/tb'
 import { RiJavaLine, RiJavascriptLine, RiNodejsLine } from 'react-icons/ri'
-import { SiAndroidstudio, SiDart, SiFlutter, SiSocketdotio } from 'react-icons/si'
-import { FaAws, FaReact } from 'react-icons/fa6'
+import { SiAndroidstudio, SiDart, SiFlutter, SiGetx } from 'react-icons/si'
+import { FaReact } from 'react-icons/fa6'
 import { BiLogoFirebase } from 'react-icons/bi'
 const Expertise = () => {
 
     const icons: any = {
         "flutter": <SiFlutter />,
+        "getx": <SiGetx />,
         "nodejs": <RiNodejsLine />,
         "typescript": <TbBrandTypescript />,
         "dart": <SiDart />,
         "reactjs": <FaReact />,
+        "redux": <TbBrandRedux />,
         "javascript": <RiJavascriptLine />,
         "android": <SiAndroidstudio />,
         "java": <RiJavaLine />,
