@@ -24,7 +24,7 @@ const AboutMe = () => {
                 whileInView={{ opacity: 1, y: 0, }}
                 transition={{ ease: "easeInOut", duration: .8 }}
                 className='text-lg tracking-widest londrina-solid-thin text-justify'>
-                    Dedicated software developer that is driven to create scalable and safe backend systems. I've developed and maintained 1k+ secure and public APIs for a variety of projects using my Node.js expertise, all while guaranteeing dependable security and speed. proficient in backend and mobile development to create interactive apps. I recently completed my Master's degree in Information Technology (2023), which strengthened my technical background even more. Apart from programming, I get inspired by writing, reading, watching movies, and being outside.
+                    Having worked as a Node.js developer for more than a year, my name is Ravikumar Desai. I know how to construct cross-platform apps with Flutter and web applications with React.js and Express.js. My present employer has given me relevant Node.js experience, and I've used TypeScript and Node.js and React.js to accomplish a project. In addition, I worked as a backend database manager with Sequelize for an HRMS project, and I completed a six-month internship in Android development. I like to write stories, hike, and watch science fiction films. I see myself as a versatile full-stack developer.
                 </motion.p>
 
             </motion.div>
