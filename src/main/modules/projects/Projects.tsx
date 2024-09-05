@@ -6,6 +6,7 @@ import { FaAws, FaReact } from 'react-icons/fa6'
 import { BiLogoFirebase } from 'react-icons/bi'
 import { BsBrowserChrome } from 'react-icons/bs'
 import { CiMobile1 } from 'react-icons/ci'
+import { Image } from "@nextui-org/react"
 
 const Projects = () => {
 
@@ -84,18 +85,29 @@ const Projects = () => {
 
   return (
     <>
-      <div id="projects" className='bg-[#ffffff] text-[#121212] flex flex-col items-center justify-between '>
+      <div id="projects" className='flex flex-col md:flex-row items-start justify-between '>
         <motion.div
           initial={{ opacity: 0, y: 110 }}
           whileInView={{ opacity: 1, y: 0, }}
-          className='lg:max-w-5xl grid lg:grid-cols-2 grid-cols-1 gap-2 text-4xl londrina-solid-light lg:m-12 p-2'>
-          <p className='lg:text-6xl text-3xl lg:text-start text-center py-2 lg:p-0'>
+          className='lg:max-w-4xl flex flex-col items-center sm:items-start gap-4 text-4xl londrina-solid-light lg:m-12 p-2'>
+             <Image
+                isZoomed
+                width={250}
+                alt="NextUI Fruit Image with Zoom"
+                src="https://cdn.pixabay.com/photo/2024/04/20/10/30/dandelion-8708275_1280.jpg"
+                className="self-center"
+            />
+            <section>
+            <p className='text-3xl lg:text-5xl text-center  sm:text-start py-2'>
             Proj<span className='londrina-outline-regular'>ects</span>
           </p>
           <p className='lg:text-lg text-xl tracking-widest londrina-solid-thin text-justify'>
             Below is list of selected projects i've done. if you have any questions or would like to chat about other things i've worked on, feel free to PING ME
           </p>
+              </section> 
+ 
         </motion.div>
+        <section>
         {
           data && data.map((item: any) => {
             return (
@@ -135,6 +147,8 @@ const Projects = () => {
             )
           })
         }
+        </section>
+      
 
       </div>
     </>

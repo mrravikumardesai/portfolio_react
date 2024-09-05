@@ -4,7 +4,7 @@ const SplashScreen = () => {
     return (
         <>
       
-                <div className='relative w-screen h-screen flex items-center justify-center  bg-gradient-to-r from-cyan-500 to-blue-500 text-[#F5F5F5] lg:text-9xl text-5xl'>
+                <div className='w-full h-screen flex items-center justify-center   text-5xl'>
                     <motion.div
                         initial={{ opacity: 0,  }}
                         whileInView={{ opacity: 1, }}
