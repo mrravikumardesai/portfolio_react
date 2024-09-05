@@ -54,7 +54,7 @@ const Expertise = () => {
             whileInView={{
                 opacity: 1, y: 0
             }}
-            className='bg-[#121212] text-[#ffffff] py-2 gap-2'>
+            className='py-2 gap-2'>
             <Swiper
                 modules={[Autoplay]}
                 spaceBetween={10}

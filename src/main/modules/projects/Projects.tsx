@@ -85,7 +85,7 @@ const Projects = () => {
 
   return (
     <>
-      <div id="projects" className='flex flex-col md:flex-row items-start justify-between '>
+      <div id="projects" className='flex flex-col md:flex-row items-center sm:items-start justify-between '>
         <motion.div
           initial={{ opacity: 0, y: 110 }}
           whileInView={{ opacity: 1, y: 0, }}
@@ -100,9 +100,6 @@ const Projects = () => {
             <section>
             <p className='text-3xl lg:text-5xl text-center  sm:text-start py-2'>
             Proj<span className='londrina-outline-regular'>ects</span>
-          </p>
-          <p className='lg:text-lg text-xl tracking-widest londrina-solid-thin text-justify'>
-            Below is list of selected projects i've done. if you have any questions or would like to chat about other things i've worked on, feel free to PING ME
           </p>
               </section> 
  

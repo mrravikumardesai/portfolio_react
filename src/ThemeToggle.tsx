@@ -5,7 +5,8 @@ import { CiSun } from 'react-icons/ci';
 import { RiMoonClearLine } from 'react-icons/ri';
 
 const ThemeToggle = () => {
-  const [darkMode, setDarkMode] = useState(() => (localStorage.getItem('theme') == "dark"));
+  // const [darkMode, setDarkMode] = useState(() => (localStorage.getItem('theme') == "dark"));
+  const [darkMode, setDarkMode] = useState(true);
   // const {darkMode} = useSelector((state:any)=>state.theme)
 
   useEffect(() => {
